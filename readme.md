@@ -14,7 +14,7 @@ Install the package through [Composer](http://getcomposer.org/). Edit your proje
     {
 	    "require": {
 	        ........,
-	        "lukepolo/laravel-passport-one-time-token": "1.0.*"
+	        "lukepolo/laravel-passport-one-time-token": "^0.0.3"
 	    }
     }
 
