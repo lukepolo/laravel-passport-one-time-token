@@ -17,7 +17,9 @@
   ],
   "require": {
     "php": ">=5.6",
-    "Laravel/Passport": "^3.0.0"
+    "Laravel/Passport": "^3.0.0",
+    "orchestra/testbench": "~3.0",
+    "phpunit/phpunit": "~6.0"
   },
   "require-dev": {
 
