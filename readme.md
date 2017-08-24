@@ -1,7 +1,5 @@
 # Laravel One Time Password 
-
-## Features
-* Quickly allows you to create one time personal access tokens
+Quickly allows you to create one time personal access tokens, that are revoked after one use.
 
 ## Laravel compatibility
 
