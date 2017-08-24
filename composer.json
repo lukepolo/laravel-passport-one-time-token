@@ -1,0 +1,44 @@
+{
+  "name": "lukepolo/laravel-one-time-token",
+  "description": "",
+  "keywords": [
+    "laravel",
+    "passport",
+    "one time token"
+  ],
+  "homepage": "https://github.com/lukepolo/laravel-one-time-token",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Luke Policinski",
+      "email": "Luke@LukePOLO.com",
+      "homepage": "http://LukePOLO.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "Laravel/Passport": "^3.0.0"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "LukePOLO\\LaravelPassportOneTimeToken\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LukePOLO\\LaravelPassportOneTimeToken\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LukePOLO\\LaravelPassportOneTimeToken\\ServiceProvider"
+      ]
+    }
+  },
+  "prefer-stable" : true,
+  "minimum-stability": "dev"
+}
