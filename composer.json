@@ -1,12 +1,12 @@
 {
-  "name": "lukepolo/laravel-one-time-token",
+  "name": "lukepolo/laravel-passport-one-time-token",
   "description": "",
   "keywords": [
     "laravel",
     "passport",
     "one time token"
   ],
-  "homepage": "https://github.com/lukepolo/laravel-one-time-token",
+  "homepage": "https://github.com/lukepolo/laravel-passport-one-time-token",
   "license": "MIT",
   "authors": [
     {
