@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1503592550">
-  <project timestamp="1503592550">
+<coverage generated="1503593070">
+  <project timestamp="1503593070">
     <package name="LukePOLO\LaravelPassportOneTimeToken\Controllers">
       <file name="/Users/LukePOLO/PhpstormProjects/nucleus/vendor/LukePOLO_test/laravel-passport-one-time-token/src/Controllers/OneTimeToken.php">
         <class name="OneTimeToken" namespace="LukePOLO\LaravelPassportOneTimeToken\Controllers">
@@ -38,50 +38,34 @@
     <package name="LukePOLO\LaravelPassportOneTimeToken">
       <file name="/Users/LukePOLO/PhpstormProjects/nucleus/vendor/LukePOLO_test/laravel-passport-one-time-token/src/ServiceProvider.php">
         <class name="ServiceProvider" namespace="LukePOLO\LaravelPassportOneTimeToken">
-          <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="0" elements="25" coveredelements="0"/>
+          <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="17" coveredelements="0"/>
         </class>
         <line num="12" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="13" type="stmt" count="0"/>
         <line num="14" type="stmt" count="0"/>
         <line num="15" type="stmt" count="0"/>
-        <line num="16" type="stmt" count="0"/>
         <line num="18" type="stmt" count="0"/>
         <line num="19" type="stmt" count="0"/>
         <line num="20" type="stmt" count="0"/>
-        <line num="21" type="stmt" count="0"/>
-        <line num="23" type="stmt" count="0"/>
         <line num="24" type="stmt" count="0"/>
         <line num="25" type="stmt" count="0"/>
         <line num="26" type="stmt" count="0"/>
         <line num="27" type="stmt" count="0"/>
-        <line num="28" type="stmt" count="0"/>
         <line num="30" type="method" name="anonymousFunction:30#131" complexity="1" crap="2" count="0"/>
         <line num="31" type="stmt" count="0"/>
         <line num="32" type="stmt" count="0"/>
-        <line num="33" type="stmt" count="0"/>
-        <line num="34" type="stmt" count="0"/>
         <line num="35" type="stmt" count="0"/>
         <line num="37" type="stmt" count="0"/>
         <line num="38" type="stmt" count="0"/>
         <line num="45" type="method" name="registerMiddleware" visibility="protected" complexity="1" crap="2" count="0"/>
-        <line num="46" type="stmt" count="0"/>
         <line num="47" type="stmt" count="0"/>
         <line num="48" type="stmt" count="0"/>
-        <metrics loc="49" ncloc="39" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="0" elements="27" coveredelements="0"/>
+        <metrics loc="49" ncloc="39" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="19" coveredelements="0"/>
       </file>
     </package>
     <file name="/Users/LukePOLO/PhpstormProjects/nucleus/vendor/LukePOLO_test/laravel-passport-one-time-token/src/config/one-time-token.php">
-      <line num="3" type="stmt" count="0"/>
       <line num="11" type="stmt" count="0"/>
-      <line num="22" type="stmt" count="0"/>
-      <line num="30" type="stmt" count="0"/>
-      <line num="31" type="stmt" count="0"/>
-      <line num="32" type="stmt" count="0"/>
-      <line num="43" type="stmt" count="0"/>
-      <line num="45" type="stmt" count="0"/>
-      <line num="47" type="stmt" count="0"/>
-      <metrics loc="46" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="8" coveredelements="0"/>
+      <metrics loc="46" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="1" coveredelements="0"/>
     </file>
-    <metrics files="4" loc="145" ncloc="92" classes="3" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="47" coveredstatements="0" elements="53" coveredelements="0"/>
+    <metrics files="4" loc="145" ncloc="92" classes="3" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="0" elements="38" coveredelements="0"/>
   </project>
 </coverage>
