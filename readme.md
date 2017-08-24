@@ -5,7 +5,7 @@ Quickly allows you to create one time personal access tokens, that are revoked a
 
  Laravel  | Laravel One Time Token
 :---------|:----------
- 5.4+     | 1.0.0
+ 5.4+     | ^0.0.3
  
 ## Installation
 
