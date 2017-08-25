@@ -22,10 +22,14 @@ class OnetimeToken
      */
     public function terminate($request)
     {
-        /** @var Token $token */
-        $token = $request->user()->token();
-        if(str_contains($token->name, 'OneTimeToken')) {
-            $token->revoke();
+        $user = $request->user();
+
+        if(!empty($user)) {
+            /** @var Token $token */
+            $token = $user->token();
+            if(!empty($token) && str_contains($token->name, 'OneTimeToken')) {
+                $token->revoke();
+            }
         }
     }
 }
