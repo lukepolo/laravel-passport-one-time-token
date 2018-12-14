@@ -35,11 +35,11 @@ Copy over the configuration file by running the command:
 Out of the box we provided some defaults to get you started.
 
 1. The user must be logged in  
-2. Middlware 
+2. Middleware 
    * The default middleware assumes you are consuming this with 
    `auth:api`. 
    * You can change this in your config
-
+3. Created at least one Personal Token client. 
 
 ### Usage
 Make a post to 
