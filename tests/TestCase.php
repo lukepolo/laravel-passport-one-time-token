@@ -2,19 +2,29 @@
 
 namespace LukePOLO\LaravelPassportOneTimeToken\Tests;
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Config;
+
 class TestCase extends \Orchestra\Testbench\TestCase
 {
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
+        Auth::routes();
 
-        $this->app['config']->set('app.url', 'https://mysite.com');
     }
 
     protected function getPackageProviders($app)
     {
         return [
             \LukePOLO\LaravelPassportOneTimeToken\ServiceProvider::class,
+        ];
+    }
+
+    protected function getPackageAliases($app)
+    {
+        return [
+            'config' => Config::class
         ];
     }
 

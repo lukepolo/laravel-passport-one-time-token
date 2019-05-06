@@ -19,22 +19,22 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             __DIR__.'/config/one-time-token.php',
             'one-time-token'
         );
+    }
 
-        $routeConfig = [
+    public function boot() {
+        $this->app['router']->group([
             'namespace' => 'LukePOLO\LaravelPassportOneTimeToken\Controllers',
             'prefix' => config('one-time-token.route_prefix'),
             'domain' => config('one-time-token.route_domain'),
             'middleware' => config('one-time-token.middleware'),
-        ];
-
-        $this->app['router']->group($routeConfig, function($router) {
+        ], function($router) {
             $router->post('create', [
-                'uses' => 'OneTimeToken@store',
+                'uses' => 'OneTimeTokenController@store',
                 'as' => 'one-time-token.create',
             ]);
         });
 
-        $this->registerMiddleware(\LukePOLO\LaravelPassportOneTimeToken\Middleware\OneTimeToken::class);
+        $this->registerMiddleware(\LukePOLO\LaravelPassportOneTimeToken\Middleware\OnetimeTokenMiddleware::class);
     }
 
     /**

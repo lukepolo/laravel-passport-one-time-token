@@ -5,7 +5,7 @@ namespace LukePOLO\LaravelPassportOneTimeToken\Middleware;
 use Closure;
 use Laravel\Passport\Token;
 
-class OnetimeToken
+class OnetimeTokenMiddleware
 {
     /**
      * @param $request
@@ -27,7 +27,8 @@ class OnetimeToken
         if(!empty($user)) {
             /** @var Token $token */
             $token = $user->token();
-            if(!empty($token) && str_contains($token->name, 'OneTimeToken')) {
+
+            if(!empty($token) && $token->transient() === false && strpos($token->name, config('one-time-token.token_name')) >= 0) {
                 $token->revoke();
             }
         }

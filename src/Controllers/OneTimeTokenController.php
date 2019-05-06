@@ -4,7 +4,7 @@ namespace LukePOLO\LaravelPassportOneTimeToken\Controllers;
 
 use Illuminate\Http\Request;
 
-class OneTimeToken
+class OneTimeTokenController
 {
     /**
      * @param Request $request
@@ -13,7 +13,7 @@ class OneTimeToken
     public function store(Request $request)
     {
         if($request->user()) {
-            return $request->user()->createToken('OneTimeToken', config('one-time-token.scopes'));
+            return $request->user()->createToken(config('one-time-token.token_name'), config('one-time-token.scopes'));
         }
 
         return response('Not Authorized.', 401);

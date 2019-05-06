@@ -5,7 +5,7 @@ Quickly allows you to create one time personal access tokens, that are revoked a
 
  Laravel  | Laravel One Time Token
 :---------|:----------
- 5.4+     | ^0.0.3
+ 5.4+     | ^0.1.0
  
 ## Installation
 
@@ -47,7 +47,7 @@ Make a post to
     oauth/one-time/create
 ``` 
 
-This will send back your token , which you can use to make another request. Once used it will be revoked. 
+This will send back your token, which you can use to make another request. Once used it will be revoked. 
 
 License
 ----
